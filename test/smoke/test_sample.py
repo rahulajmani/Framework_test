@@ -2,7 +2,7 @@ import unittest
 from lib.ui.login_page import LoginPage
 from lib.utils import create_driver
 from selenium.webdriver.common.keys import Keys
-
+import pytest
 
 class TestComponents(unittest.TestCase):
 
