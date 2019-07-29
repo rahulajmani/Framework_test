@@ -14,7 +14,7 @@ def get_driver_instance():
         elif browser_type == 'firefox':
             driver=Firefox('./Browser_server/geckodriver.exe')
 
-        driver.maximize_windows()
+        driver.maximize_window()
         driver.implicitly_wait(30)
 
         if url_info=='test':
