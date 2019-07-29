@@ -20,7 +20,7 @@ class TestComponents(unittest.TestCase):
         self.login.get_password_textbox().send_keys('pass')
         self.login.get_login_button().click()
         actual_title = self.driver.title
-        expected_title = 'actiTime-Login'
+        expected_title = 'actiTIME - Login'
 
         assert actual_title == expected_title,'passed'
 

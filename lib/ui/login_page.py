@@ -4,7 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 class LoginPage:
 
-    def __int__(self, driver):
+    def __init__(self, driver):
         self.driver = driver
 
     def wait_for_login_page_to_load(self):

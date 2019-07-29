@@ -29,9 +29,11 @@ class TestLogins1582(unittest.TestCase) :
         #wait for the page to load
         self.home.wait_for_login_page_to_load()
         #get title of the page
-        actual_title=self.home.title
+        actual_title= self.home.title
         expected_title= data['TC123456']['title']
         assert actual_title==expected_title
          #click on logout
         self.home.get_logout_button().click()
+        self.login.wait_for_login_page_to_load()
+
 
